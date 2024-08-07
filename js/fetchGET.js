@@ -12,7 +12,7 @@ document.getElementById('form-login').addEventListener('submit', function (event
 
     async function organizaURL(nome, email) {
 
-        const url = new URL('http://localhost:3001/login.html/usuarios/login');
+        const url = new URL('https://guia-turistico-336g.onrender.com/login.html/usuarios/login');
         url.searchParams.append('nome', nome);
         url.searchParams.append('email', email);
 
