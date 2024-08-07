@@ -11,7 +11,7 @@ document.getElementById('form-cadastro').addEventListener('submit', function (ev
     };
 
     //url de onde tá a api
-    fetch('http://localhost:3001/cadastro.html/usuarios/cadastro', {
+    fetch('https://guia-turistico-336g.onrender.com/cadastro.html/usuarios/cadastro', {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
