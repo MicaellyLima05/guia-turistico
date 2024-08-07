@@ -5,7 +5,7 @@ document.getElementById("btnBusca").addEventListener("click", function () {
 
     async function organizaURL(palavraChave) {
 
-        const url = new URL('https://guia-turistico-336g.onrender.com/usuarios/busca');
+        const url = new URL('http://localhost:3001/usuarios/busca');
         url.searchParams.append('palavraChave', palavraChave);
 
     //url de onde tá a api
@@ -46,7 +46,7 @@ organizaURL(palavraChave);
 async function verificarLogin() {
     const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
 
-    const url = new URL('https://guia-turistico-336g.onrender.com/usuarios/login/status');
+    const url = new URL('http://localhost:3001/usuarios/login/status');
     url.searchParams.append('nome', usuarioLogado.nome);
 
     try {
@@ -90,7 +90,7 @@ async function verificarLogin() {
             return; 
         } 
 
-        const url = 'https://guia-turistico-336g.onrender.com/usuarios/favoritar';
+        const url = 'http://localhost:3001/usuarios/favoritar';
         const dados = {
             nomeUsuario: usuario.nome,
             idAtrativo: idAtrativo,
