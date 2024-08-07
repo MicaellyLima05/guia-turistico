@@ -2,7 +2,7 @@
      async function verificarLogin() {
         const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
 
-        const url = new URL('https://guia-turistico-336g.onrender.com/usuarios/login/status');
+        const url = new URL('http://localhost:3001/usuarios/login/status');
         url.searchParams.append('nome', usuarioLogado.nome);
 
         try {
