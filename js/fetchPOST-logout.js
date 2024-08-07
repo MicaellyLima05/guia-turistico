@@ -12,7 +12,7 @@ document.getElementById('form-logout').addEventListener('submit', function (even
 
     //url de onde tá a api
     try {
-        const response = fetch('http://localhost:3001/usuarios/logout', {
+        const response = fetch('https://guia-turistico-336g.onrender.com/usuarios/logout', {
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json'
