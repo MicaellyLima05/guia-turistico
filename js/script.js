@@ -23,7 +23,6 @@ document.getElementById("btnBusca").addEventListener("click", function () {
 
         //o link enviado pela api vem pra cá
         const dados = await response.json();
-        console.log(dados);
 
         document.getElementById("link_resultado").href = dados;
         document.getElementById("cabecalho__menu__pesquisa_2").style.display = 'block';
