@@ -22,6 +22,10 @@ app.use(express.json());
 const usuarios = [];
 const listaPalavrasChave = [];
 
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
+
 //rota de cadastro de novo usuário
 app.post('/cadastro.html/usuarios/cadastro', async (req,res) => {
     
